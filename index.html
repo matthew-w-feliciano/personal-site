@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matthew Feliciano | Home Page</title>
+    <!-- The first 3 links below connect to font styles from fonts.google.com, and the 4th link is the link to the CSS. Be careful because some font types have low hanging letters like "y", "j", "g", etc., which can cause some text containers to look vertically off-center on the web page. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <!-- Flexbox on the body element so that the div and footer elements are treated like flex items, which allows for the footer to be sticky (stays at the bottom of the page).To create a sticky footer, go to the CSS code and set the height of the viewport to 100% by setting the html, body element to a height of 100%. Added the flex box property to the .home class selector. -->
+  <body class="home">
+
+    <!-- //  INTRO  // -->
+    <!-- Use div to alter the style of the HTML with our CSS. Highlight the whole block within the divs and then press tab in order to maintain proper indentations. -->
+    <div class="content-wrapper">
+      <!-- Another div  to adjust the background color of the main content so that it doesn't stretch to the bottom of the web page unnecessarily. If you want to check what this does, comment out the line of code and refresh the web page. -->
+      <div class="content-background">
+        <header>
+          <h1>Matthew Feliciano</h1>
+          <h2>Data Scientist</h2>
+        </header>
+
+        <!-- //  ABOUT ME  // -->
+        <main>
+          <!-- Start content edits below this line. -->
+          <p>Hello there! I'm a Data Scientist working in Tampa, FL. I want to pursue a career in Web Development!</p>
+          <p>To learn more about my work history, check out my <a href="resume.html">resume page</a>. Thanks for stopping by!</p>
+        </main>
+        <!-- End About Me. -->
+      </div>
+    </div>
+
+    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+    <footer>
+      <p>© 2023 by Matthew Feliciano | <a href="mailto:mattfeliciano22@gmail.com">mattfeliciano22@gmail.com</a></p>
+
+      <!-- Added a class "socials" to remove the big blocky background from these elements -->
+      <ul class="socials">
+        <li>
+          <a type="a" href="https://www.linkedin.com/in/matthew-feliciano/" target="_blank"><img src="icon-logo-linkedin.png" alt="This is a LinkedIn Logo that will take you to my LinkedIn page."></a>
+        </li>
+      </ul>
+      <!-- End Footer Info, Social Media -->
+    </footer>
+  </body>
+</html>
