@@ -1,0 +1,276 @@
+/* COLOR PALETTE
+Dark green    #3c8453 
+Sandy beige   #bcaa96 
+Dark gray     #222222 
+Light gray    #d3d4d6 
+Off-white     #f6f6f6 
+*/
+
+/*GLOBAL STYLES 
+---------------------*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* The 62.5% method to use rem units for responsiveness; refer to notes on this for more information. Essentially setting the default to 10px.*/
+}
+/* Setting all elements to inherit the box-sizing properties */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Using selector list to change the html and body elements. Setting height to 100% allows content to span entire width of web page, regardless of viewport size. */
+html, body {
+    height: 100%;
+}
+/* Added the font styles to the "body" type selector so all elements on web page inherit the style. Did this by copying the CSS rule from fonts.google.com that corresponds with the font style that we linked to of our index.html and resume.html files. Chose 3 different fonts so copy only the line of CSS code from fonts.google.com that correspond with that font style specifically. Check out popular sites to pick popular fonts. */
+body {
+    background: #f9fbfd;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem; /* Used rem to reference the root font size from the html element above. This is equivalent to 15px. */
+    line-height: 1.4; /* Makes it relative to the font-size property. */
+}
+/* Changed the font for our headings using a selector list. */
+h1, h2, h3 {
+    font-family: 'Ultra', serif;
+    font-weight: 400;
+    margin: 0;
+}
+h1 {
+    font-size: 6rem; /* Equal to 60px. */
+    line-height: 0.85;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+/* links */
+a {
+    color: #3c8453;
+}
+footer a {
+    color: #bcaa96;
+}
+/* Hover pseudo-class selector is used below to change the color of links when the cursor hovers above. Text-decoration property removes the underline when hovering. */
+a:hover {
+    color: #bcaa96;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #3c8453;
+}
+/* Button style referenced in the index.html under the Projects section. */
+.btn {
+    background: #3c8453;
+    color: #f6f6f6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block; /* Want the padding to apply to all sides of the buttons */
+    padding: 7px;
+    letter-spacing: .1em; /* "em" makes it relative to the parent element (the button container). */
+    line-height: 1; /* Changed line height because there seemed to be extra spacing at the top/bottom of the content box, even though we had already set the padding. */
+    border-radius: 4px; /* Makes borders of buttons rounded */
+}
+/* Max-width sets the maximum value; did this to be sure of adjustability across desktops and smaller phone screens so customers don't have to scroll to view content. Added a padding value so that the content is not right on the edge of the viewport. */
+.content-wrapper {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* HOME
+---------------------*/
+/* Explanation on why used "display: flex;" can be found above the body element in the index.html. Changed the flex-direction to column so that we can change the height of the flex item. */
+.home {
+    background: url(https://raw.githubusercontent.com/matthew-w-feliciano/personal-website/main/self.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+/* Used a descendant combinator (.home .content-wrapper) to only apply the style to the "content-wrapper" element within "home" element in the index.html. The " / 0.9" sets the transparency. Added a flex property to push the footer down to the bottom of the page; did this using the div with "class=content-wrapper" under the body element to push down its container all the way to the bottom of the page; to do this we set the flex-grow (first position) value to 1 in order to make it fill the available space, then we set the flex-shrink (second position) value to 0 to prevent the content-wrapper from getting smaller, and finally for the flex-basis (third position) value it is set to auto; these values will ensure that the content-wrapper will be at least the height of its content and will expand to take up the available space. */
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+.content-background {
+    background: rgb(255 255 255 / 0.9);
+    padding: 30px;
+}
+/* Adjusting to make space (padding) for the headings in the smaller screen sizes */
+@media screen and (max-width: 650px) {
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-background {
+        padding: 20px;
+    }
+}
+
+/* RESUME
+---------------------*/
+/* Descendant selector applies to the header on the resume page because type selector "header" is under the body tag that has the class selector "resume". Used the "background-size: cover" so that the background image spans the entire document and not just the header. The before pseudo-selector adds the content before the header content. Set display to block to add a height property. Added "content" to have something on which to apply the ::before pseudo-selector, and we leave it blank with the quotes so that no text is displayed there. */
+.resume header::before {
+    background: url(../images/cpu-4866x3647.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+/* Adjusting the margin for each section in resume (applied resume-section class to each section) to have more space between sections. */
+.resume-section {
+    margin-bottom: 50px;
+}
+/* Used a descendant selector to add a border bottom style underneath the headers for each section (the h2's in the resume.html code). */
+.resume-section h2 {
+    border-bottom: 2px dashed #d3d4d6;
+}
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem; /* Wanted download button to be slightly larger than the other buttons. */
+}
+/* Noticed that the Download PDF button used in the resume.html with our .download-link class selector is hovering over the text content at a width of over ~1200px so we are adding a media query below to adjust this. */
+@media screen and (max-width: 1200px) {
+    .download-link {
+        position: absolute;
+    }
+}
+/* Changing background image size on screens that are 500px and smaller so that it doens't take up so much space. Reduced font size using the h1 type selector. */
+@media screen and (max-width: 500px) {
+    .resume header::before {
+        height: 200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+}
+/* Profile
+---------------------*/
+
+/* Projects
+---------------------*/
+.project-item { 
+    margin: 30px 0;
+ }
+ /* Changing images in resume.html to float and then text will fill the surrounding space. */
+ .project-item img {
+     width: 300px;
+ }
+ /* Added for responsiveness. Adding a breakpoint (where the float style was beginning to break) to the projects section so that when the screen width is ~600px or larger the screen will adjust to be more responsive and then we won't see any wonkiness with the text going underneath the images. Used the display property to keep all child elements within their containers for the class selector project-item (regardless of whether they are floated or not floated). */
+ @media screen and (min-width: 607px) {
+    .project-item {
+        display: flow-root; 
+     }
+     .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+ } 
+ /* Used another media query to activate the grid layout when we reach 606px in max-width (don't want conflicts with other media query's min-width 607px (activates when screen width is 607px and larger; whereas this media query below activates when screen width is 606px and smaller). Used project-wrapper selector in the resume.html under the Projects section. Added a min-width later so that the two grid columns specified below are only apply from 400px to 606px; did this so that can add later that the columns should condense back down to one column when the viewport is smaller than 400px in this case, to accommodate smaller screen sizes. Over 606px will change it back to the float layout that we specified above.  */
+ @media screen and (min-width: 400px) and (max-width: 606px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* creates 2 columns at 1fr width which means equal widths. */
+        column-gap: 20px; /* Creates space between the columns. */
+    }
+    .project-item img { /* Set the images to be the same width as it's container, which is the columns of text in this case. */
+        width: 100%;
+    }
+ }
+ /* At 500px (adjust this as needed), the images do not appear too large for their container. */
+ @media screen and (max-width: 500px) {
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+ }
+
+/* Work Experience
+---------------------*/
+.work-item {
+    margin: 30px 0;
+}
+/* Descendant selector to alter the margin just for the paragraph element p in the work-details class selector in the work experience section of resume.html. */
+.work-details p {
+    margin: 0;
+}
+/* Using a media query to adjust the activation of the grid layout for each .work-item so that it only appears on screens widths that are 860px and larger. Created the grid container called work-item that is a class selector applied in the resume.html for each section element in Work Experience. Used the grid-template-columns property to create 2 columns with the first column set to 300px (adjust as needed) and the second column set to 1 fr (fraction), which will allow for the second column to take up the remainder of the available width space on the web page. */
+@media screen and (min-width: 860px){
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    /* Same thing as the .work-details p selector above, but this time want it to only apply to the first paragraph so used the :first-child pseudo-selector aka the first paragraph in the work experience section only. This makes it so that the .work-item selector above still applies its 30px margin when screen sizes are below 860px. */
+    .work-summary p:first-child {
+        margin-top: 0;
+    }
+}
+
+/* Education
+---------------------*/
+/* Same explanation as .work-item above. */
+.education-item {
+    margin: 30px 0;
+}
+/* Same explanation as .work-details above. */
+.education-details p {
+    margin: 0;
+}
+/* Same explanation as the media query used for .work-item and .work-summary. */
+@media screen and (min-width: 860px){
+    .education-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .education-summary p:first-child {
+        margin-top: 0;
+    }
+}
+
+/* FOOTER
+---------------------*/
+footer {
+    background: #222;
+    color: #d3d4d6;
+}
+/* Setting list-style-type to none will remove the default bullet style that is used in list of socials. Set padding to 0 to remove the default padding style, which would push social media icons to the right. */
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+/* Descendant selector to change the style of our social media icons; aligns the list items side by side, while still allowing to apply block-model properties. */
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+
+}
+/* Changing the box size of the socials icons using the descendant selector again. */
+.socials img {
+    width: 32px;
+}
+/* Added a hover pseudo-class to the img elements so that the cursor appears differently when hovering over the icons. */
+.socials img:hover {
+    opacity: 50%;
+}
+/* For screens 860px and larger, make it so the footer with the icons and other content are aligned at opposite ends of the screen. Added justify-content property in order to space out the flexbox items evenly and push the icons to the right side of the web page. */
+@media screen and (min-width: 860px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+/* For screens that are smaller than 860px, adjusted the footer so that the content is centered and won't overlap with each other. */
+@media screen and (max-width: 859px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
