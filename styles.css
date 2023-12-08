@@ -71,9 +71,11 @@ footer a:hover {
 }
 
 #nav-menu {
-    position: absolute;
-    top: 0;
-    right: 0;
+    #nav-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 #nav-menu ul {
@@ -121,14 +123,12 @@ footer a:hover {
     }
 }
 
-.resume header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: transparent; /* Set the background color to transparent */
-    box-shadow: none; /* Remove box shadow to make it appear over the background image */
+.resume header::before {
+    background: url(https://raw.githubusercontent.com/matthew-w-feliciano/personal-website/main/cpu-4866x3647.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
 }
 
 .resume-section {
