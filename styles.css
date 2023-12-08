@@ -94,6 +94,8 @@ footer a:hover {
     text-decoration: none;
     color: #f6f6f6;
     font-size: 1.5rem;
+    padding: 5px;
+    margin: 0 auto;
 }
 
 #nav-menu a:hover {
