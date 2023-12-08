@@ -92,15 +92,12 @@ footer a:hover {
     text-decoration: none;
     color: #f6f6f6;
     font-size: 1.5rem;
+    background: #3c8453;
+    padding: 10px;
 }
 
 #nav-menu a:hover {
     color: #bcaa96;
-}
-
-#nav-menu .content-wrapper {
-    background: #3c8453;
-    padding: 10px;
 }
 
 .home {
