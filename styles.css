@@ -79,8 +79,7 @@ footer a:hover {
 
 #nav-menu ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 5px;
     background: #3c8453;
     padding: 10px;
 }
