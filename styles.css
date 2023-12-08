@@ -75,7 +75,6 @@ footer a:hover {
     top: 5px;
     right: 5px;
     font-size: 1.5rem;
-    background: #3c8453;
 }
 
 #nav-menu ul {
@@ -91,8 +90,9 @@ footer a:hover {
 
 #nav-menu a {
     text-decoration: none;
-    color: #f6f6f6;;
+    color: #f6f6f6;
     font-size: 1.5rem;
+    background: #3c8453;
 }
 
 #nav-menu a:hover {
