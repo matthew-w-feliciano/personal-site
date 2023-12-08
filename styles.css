@@ -71,9 +71,10 @@ footer a:hover {
 }
 
 #nav-menu {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5rem;
 }
 
 #nav-menu ul {
