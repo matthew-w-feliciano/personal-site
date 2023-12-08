@@ -20,6 +20,16 @@ body {
     line-height: 1.4;
 }
 
+header {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: -webkit-max-content -webkit-max-content auto;
+    grid-template-rows: max-content max-content auto;
+    background: #000;
+    position: relative;
+}
+
 #nav-outer {
     background: #FFF;
     position: relative;
