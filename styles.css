@@ -114,6 +114,16 @@ footer a:hover {
     flex-direction: column;
 }
 
+@media screen and (max-width: 650px) {
+    .home {
+        background: url(https://raw.githubusercontent.com/matthew-w-feliciano/personal-website/main/self.jpg) no-repeat;
+        background-size: cover;
+        background-position: bottom 10% right 80%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .home .content-wrapper {
     flex: 1 0 auto;
 }
@@ -128,7 +138,10 @@ footer a:hover {
         padding: 10px;
     }
     .content-background {
-        padding: 20px;
+        padding: 5px;
+    }
+    main p {
+        margin-bottom: 0;
     }
 }
 
@@ -138,20 +151,6 @@ footer a:hover {
     content: "";
     display: block;
     height: 375px;
-}
-
-@media screen and (max-width: 500px) {
-    .resume header::before {
-        background: url(https://raw.githubusercontent.com/matthew-w-feliciano/personal-website/main/cpu-4866x3647.jpg) left;
-        background-position: bottom 50% right 5%;
-        height: 200px;
-    }
-    h1 {
-        font-size: 5rem;
-    }
-    h2 {
-        font-size: 2.6rem;
-    }
 }
 
 .resume-section {
