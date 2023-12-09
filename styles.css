@@ -118,7 +118,7 @@ footer a:hover {
     .home {
         background: url(https://raw.githubusercontent.com/matthew-w-feliciano/personal-website/main/self.jpg) no-repeat;
         background-size: 1000px 750px;
-        background-position: bottom -65% left 20%;
+        background-position: bottom 99% left 20%;
         display: flex;
         flex-direction: column;
     }
