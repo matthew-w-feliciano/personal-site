@@ -117,8 +117,8 @@ footer a:hover {
 @media screen and (max-width: 650px) {
     .home {
         background: url(https://raw.githubusercontent.com/matthew-w-feliciano/personal-website/main/self.jpg) no-repeat;
-        background-size: cover;
-        background-position: bottom 10% right 80%;
+        background-size: 1500px 1125px;
+        background-position: bottom 99% left 20%;
         display: flex;
         flex-direction: column;
     }
