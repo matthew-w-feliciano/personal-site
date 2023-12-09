@@ -71,17 +71,18 @@ footer a:hover {
 }
 
 #nav-menu {
-    position: fixed;
+    position: absolute;
     top: 5px;
     right: 5px;
     font-size: 1.5rem;
+    margin: 0;
 }
 
 #nav-menu ul {
     list-style: none;
-    margin: 5px;
     background: #3c8453;
     padding: 5px;
+    margin: 0;
 }
 
 #nav-menu li {
@@ -100,6 +101,12 @@ footer a:hover {
     color: #bcaa96;
 }
 
+@media screen and (max-width: 800px) {
+    #nav-menu {
+        display: none;
+    }
+}
+
 .home {
     background: url(https://raw.githubusercontent.com/matthew-w-feliciano/personal-website/main/self.jpg) no-repeat;
     background-size: cover;
@@ -110,6 +117,7 @@ footer a:hover {
 .home .content-wrapper {
     flex: 1 0 auto;
 }
+
 .content-background {
     background: rgb(255 255 255 / 0.9);
     padding: 30px;
@@ -132,6 +140,20 @@ footer a:hover {
     height: 375px;
 }
 
+@media screen and (max-width: 500px) {
+    .resume header::before {
+        background: url(https://raw.githubusercontent.com/matthew-w-feliciano/personal-website/main/cpu-4866x3647.jpg) left;
+        background-position: bottom 50% right 5%;
+        height: 200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+}
+
 .resume-section {
     margin-bottom: 50px;
 }
@@ -152,18 +174,6 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 500px) {
-    .resume header::before {
-        height: 200px;
-    }
-    h1 {
-        font-size: 5rem;
-    }
-    h2 {
-        font-size: 2.6rem;
-    }
-}
-
 .project-item { 
     margin: 30px 0;
 }
@@ -172,7 +182,7 @@ footer a:hover {
      width: 300px;
 }
 
-@media screen and (min-width: 607px) {
+@media screen and (min-width: 600px) {
     .project-item {
         display: flow-root; 
     }
@@ -182,7 +192,7 @@ footer a:hover {
     }
 } 
 
-@media screen and (min-width: 400px) and (max-width: 606px) {
+@media screen and (min-width: 400px) and (max-width: 599px) {
     .project-wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -208,7 +218,7 @@ footer a:hover {
     margin: 0;
 }
 
-@media screen and (min-width: 860px){
+@media screen and (min-width: 800px){
     .work-item {
         display: grid;
         grid-template-columns: 300px 1fr;
@@ -227,7 +237,7 @@ footer a:hover {
     margin: 0;
 }
 
-@media screen and (min-width: 860px){
+@media screen and (min-width: 800px){
     .education-item {
         display: grid;
         grid-template-columns: 300px 1fr;
@@ -262,7 +272,7 @@ footer {
     opacity: 50%;
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 800px) {
     footer {
         display: flex;
         justify-content: space-between;
@@ -270,7 +280,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 859px) {
+@media screen and (max-width: 799px) {
     footer {
         text-align: center;
         padding: 10px;
