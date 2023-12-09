@@ -117,8 +117,8 @@ footer a:hover {
 @media screen and (max-width: 650px) {
     .home {
         background: url(https://raw.githubusercontent.com/matthew-w-feliciano/personal-website/main/self.jpg) no-repeat;
-        background-size: 1000px 750px;
-        background-position: bottom 99% left 20%;
+        background-size: cover;
+        background-position: bottom 0% left 20%;
         display: flex;
         flex-direction: column;
     }
@@ -271,7 +271,7 @@ footer {
     opacity: 50%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
     footer {
         display: flex;
         justify-content: space-between;
@@ -279,9 +279,18 @@ footer {
     }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 649px) {
     footer {
         text-align: center;
-        padding: 10px;
+        padding: 0;
+        margin: 0;
+    }
+    footer p {
+        margin: 0;
+        padding: 5px;
+    }
+    footer .socials {
+        margin: 0;
+        padding: 5px;
     }
 }
