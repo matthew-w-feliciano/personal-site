@@ -153,6 +153,18 @@ footer a:hover {
     height: 375px;
 }
 
+@media screen and (max-width: 500px) {
+    .resume header::before {
+        height: 200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+}
+
 .resume-section {
     margin-bottom: 50px;
 }
