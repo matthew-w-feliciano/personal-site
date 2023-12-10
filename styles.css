@@ -70,43 +70,6 @@ footer a:hover {
     max-width: 900px;
 }
 
-#nav-menu {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-#nav-menu ul {
-    list-style: none;
-    background: #3c8453;
-    padding: 5px;
-    margin: 0;
-}
-
-#nav-menu li {
-    display: inline-block;
-}
-
-#nav-menu a {
-    text-decoration: none;
-    color: #f6f6f6;
-    font-size: 1.5rem;
-    padding: 5px;
-    margin: 0 auto;
-}
-
-#nav-menu a:hover {
-    color: #bcaa96;
-}
-
-@media screen and (max-width: 800px) {
-    #nav-menu {
-        display: none;
-    }
-}
-
 .home {
     background: url(https://raw.githubusercontent.com/matthew-w-feliciano/personal-website/main/self.jpg) no-repeat;
     background-size: cover;
