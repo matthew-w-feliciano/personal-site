@@ -469,7 +469,7 @@ h4 {
   
 @media screen and (max-width: 499px) {
     .project-item img {
-        margin: -4rem 7.5rem 1rem 7.5rem;
+        margin: -4rem 7rem 1rem 7rem;
         width: 200px;
     }
 	[role="article"] h2 {
