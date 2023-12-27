@@ -469,7 +469,7 @@ h4 {
   
 @media screen and (max-width: 499px) {
     .project-item img {
-        margin: 0 8rem 1rem 8rem;
+        margin: -4rem 8rem 1rem 8rem;
         width: 200px;
     }
 	[role="article"] h2 {
@@ -481,3 +481,8 @@ h4 {
 	}
 }
 /* ^added media to adjust position of icon for style picker at bottom to make it more centered on phone screens */
+
+/* added id to center single item */
+#centered {
+	text-align: center;
+}
