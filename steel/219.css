@@ -1,0 +1,115 @@
+/* TYPEKIT_KIT_ID: fzq7emy */
+
+/**                                                                                                                                                                                                                                                                                         
+*
+*    SVG graphics:
+*    - bg1.svg                     59 KB
+*    - bg2.svg                     46 KB
+*    - footer.svg                   8 KB
+*    - hook1.svg                   12 KB
+*    - hook2.svg                   12 KB
+*    - hook3.svg                   14 KB
+*    - layer.svg                   24 KB
+*    - layer-frame.svg             25 KB
+*    - layer-middle.svg            25 KB
+*
+*    PNG graphics:
+*    - bg.png                     479 KB
+*
+*    CSS:
+*    - 219.css                      3 KB
+*    - 219-keyframes.css           20 KB
+*    - 219-base.css                 3 KB
+*    - 219-400.css                  4 KB
+*    - 219-800.css                  4 KB
+*    - 219-1367.css                24 KB
+*    - 219-1600.css                 1 KB
+*    - 219-fix1.css                 3 KB
+*    - 219-fix2.css                 3 KB
+*    - 219-bg.css                   2 KB
+*
+*    ---------------------------- 759 KB (0.74 MB)
+*/
+
+@import url("../steel/219-keyframes.css");
+@import url("../steel/219-base.css");
+@import url("../steel/219-400.css") all and (min-width: 400px);
+@import url("../steel/219-800.css") all and (min-width: 800px) and (max-width: 1366px);
+@import url("../steel/219-1367.css") all and (min-width: 1367px);
+@import url("../steel/219-1600.css") all and (min-width: 1600px);
+@import url("../steel/219-fix1.css") all and (min-width: 1367px);
+@import url("../steel/219-fix2.css") all and (min-width: 1367px);
+@import url("../steel/219-bg.css") all and (min-width: 400px);
+
+.project-item p {
+    text-align: left;
+}
+
+.project-item h4 {
+    text-align: center;
+}
+
+.project-item img {
+    width: 300px;
+    margin: 0 6rem 0 6rem;
+}
+  
+h4 {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 400px) and (max-width: 1366px) {
+  .project-item img {
+    margin: 1rem 2rem 1rem 2rem;
+    width: 200px;
+  }
+  .main {
+    display:none;
+  }
+  html,
+  body,
+  div,
+  section,
+  header,
+  h1,
+  h2,
+  h3,
+  abbr,
+  p,
+  a,
+  footer,
+  aside,
+  nav,
+  ul,
+  li {
+    padding: 1rem 0 1rem 0;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .project-item img {
+    margin: 1rem 8rem 1rem 8rem;
+    width: 150px;
+  }
+  .main {
+    display:none;
+  }
+  html,
+  body,
+  div,
+  section,
+  header,
+  h1,
+  h2,
+  h3,
+  abbr,
+  p,
+  a,
+  footer,
+  aside,
+  nav,
+  ul,
+  li {
+    padding: 1rem 0 1rem 0;
+  }
+}
