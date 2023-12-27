@@ -195,7 +195,7 @@ h4 {
 
 @media screen and (max-width: 499px) {
   .project-item img {
-      margin: 1rem 7rem 1rem 7rem;
+      margin: 1rem 6.5rem 1rem 6.5rem;
       width: 150px;
   }
 }
