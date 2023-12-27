@@ -1,6 +1,3 @@
-
-
-
 /* TYPEKIT_KIT_ID: xtk3kmd */
 
 html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,a,abbr,acronym,em,img,ol,ul,li {border: 0;font-weight: inherit;font-style: inherit;font-size: 100%;font-family: inherit;vertical-align: baseline;margin: 0;padding: 0;}
@@ -126,7 +123,7 @@ p {
   font-weight: 700;
   background: url('img-sprite.png') no-repeat center 0.25em;
   background-size: 25rem;
-  margin-bottom: 1.3em;
+  margin: 1em 2em 1em 2em;
 }
 
 .intro h2 {
@@ -166,9 +163,9 @@ p {
   text-transform: uppercase;
 }
 
-.preamble p:nth-child(1n+3) {
+/* .preamble p:nth-child(1n+3) {
   text-indent: 1.5em;
-}
+} */
 
 .preamble p:nth-child(1n+3):first-line {
   text-transform: none;
@@ -181,6 +178,7 @@ p {
 
 h4 {
   text-decoration: underline;
+  margin: 1rem 0 1rem 0;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1000px) {
@@ -360,9 +358,9 @@ h3.archives, h3.resources {
   padding-top: 2em;
 }
 
-.participation p:nth-child(1n+3) {
+/* .participation p:nth-child(1n+3) {
   text-indent: 1.5em;
-}
+} */
 
 .benefits {
   padding: 1em 0 20em;
@@ -396,7 +394,7 @@ h3.archives, h3.resources {
 
 .benefits:before {
   content: 'Apply Generously';
-  font-size: 3em;
+  font-size: 2em;
   position: absolute;
   bottom: 3.5rem;
   text-align: center;
@@ -409,7 +407,7 @@ h3.archives, h3.resources {
 
 .benefits:after {
   content: 'And Consistently!';
-  font-size: 3em;
+  font-size: 2em;
   position: absolute;
   bottom: -13rem;
   text-align: center;

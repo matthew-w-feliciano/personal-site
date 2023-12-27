@@ -94,22 +94,12 @@ h4 {
   .main {
     display:none;
   }
-  html,
-  body,
-  div,
-  section,
-  header,
-  h1,
-  h2,
-  h3,
-  abbr,
-  p,
-  a,
-  footer,
-  aside,
-  nav,
-  ul,
   li {
     padding: 1rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
+  }
+  body p{
+    text-align: left;
+    padding: 1rem;
   }
 }
