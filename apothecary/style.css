@@ -394,7 +394,7 @@ h3.archives, h3.resources {
 
 .benefits:before {
   content: 'Apply Generously';
-  font-size: 2em;
+  font-size: 1.5em;
   position: absolute;
   bottom: 3.5rem;
   text-align: center;
@@ -407,7 +407,7 @@ h3.archives, h3.resources {
 
 .benefits:after {
   content: 'And Consistently!';
-  font-size: 2em;
+  font-size: 1.5em;
   position: absolute;
   bottom: -13rem;
   text-align: center;

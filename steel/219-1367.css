@@ -159,7 +159,7 @@ h2 {
 
 h1 {
     margin: 0;
-    padding: 40px 70px 10px 70px;
+    /* padding: 40px 70px 10px 70px; */
     font-size: 60px;
     line-height: 60px;
 }
@@ -651,6 +651,11 @@ footer a::after {
 .design-archives h3,
 .zen-resources h3 {
     text-align: center;
+}
+
+/*changed font size due to overflow issue */
+h3.archives {
+    font-size: 20px;
 }
 
 html:not([lang="zh-tw"]) .zen-resources .view-css a {
