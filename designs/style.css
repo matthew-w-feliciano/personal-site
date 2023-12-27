@@ -462,6 +462,7 @@ img {
 }
 .design-list .design-preview img {
   width: 100%;
+  height: 300px;
 }
 .design-list .design-preview:hover, .design-list .design-preview:focus {
   transform: scale(1.01) translateY(-1px);
