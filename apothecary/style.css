@@ -133,7 +133,7 @@ p {
     font-family: "refrigerator-deluxe",sans-serif;
     font-style: normal;
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
     font-size: 1.12rem;
     letter-spacing: 0.5rem;
     font-weight: 700;
@@ -197,6 +197,7 @@ p {
 h4 {
   text-decoration: underline;
   margin: 1rem 0 1rem 0;
+  text-align: left;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1000px) {
