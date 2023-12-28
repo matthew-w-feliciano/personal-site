@@ -5,7 +5,7 @@
 -------------------------------------------*/
 * { margin: 0; padding: 0; }
 html { font-size: 62.5%; } /* for rems */
-body { font-family: Helvetica, Arial, sans-serif; color: #333; background: #e8ecf0 url(denim2.png) no-repeat 50% 350px; }
+body { font-family: Helvetica, Arial, sans-serif; color: #333; background: #e8ecf0 url(denim2.png) repeat 50% 350px; }
 
 
 /* block level */
@@ -154,7 +154,7 @@ sub, sup { line-height: 0; }
 [role="banner"] h1:after { content: "Data Scientist"; text-align: left; visibility: visible; display: block; color: #aaa; letter-spacing: 0.5em; font-size: 1.4rem; font-weight: normal; margin: 0.5em 0 3em; color: rgba(24, 46, 79, 0.4); }
 
 [role="banner"] h2 { visibility: hidden; display: none; text-transform: uppercase; font-weight: 400; color: rgba(41, 78, 134, 0.5); }
-[role="banner"] h2:after { content: "Impeccable Quality"; visibility: visible; display: block; }
+[role="banner"] h2:after { content: "Supreme Craftmanship"; visibility: visible; display: block; }
 
 
 
@@ -168,7 +168,7 @@ sub, sup { line-height: 0; }
     Preamble
 -------------------------------------------*/
 .preamble { background: transparent url(sep.png) no-repeat 50% 0; }
-.preamble h3:after { visibility: visible; content: "A Fashion-Forward Future";  }
+.preamble h3:after { visibility: visible; content: "Trendsetting elegance";  }
 
 
 /*-------------------------------------------    
@@ -180,13 +180,13 @@ sub, sup { line-height: 0; }
 /*-------------------------------------------    
 	Participation
 -------------------------------------------*/
-.participation h3:after { content: "One Size Fits All Be Damned!";  }
+.participation h3:after { content: "Every body, every fit";  }
 
 
 /*-------------------------------------------    
 	Benefits
 -------------------------------------------*/
-.benefits h3:after { content: "Look Great\2026  and Feel Great Too!";  }
+.benefits h3:after { content: "Radiate style, exude comfort!";  }
 
 
 /*-------------------------------------------    
@@ -435,12 +435,12 @@ h2 { font-size: 20px\9; }
   
 h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 h4 {
     text-decoration: underline;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -461,19 +461,19 @@ h4 {
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 630px) {
+@media screen and (min-width: 551px) and (max-width: 630px) {
     .project-item img {
         margin: 0 10rem 1rem 10rem;
     }
 }
   
-@media screen and (max-width: 499px) {
+@media (max-width: 550px) {
     .project-item img {
-        margin: -4rem 7rem 1rem 7rem;
+        padding: 0 2rem 5rem 2rem;
         width: 200px;
     }
 	[role="article"] h2 {
-		padding: 5rem 2rem 0 2rem;
+		padding: 2rem 2rem 0 2rem;
 		margin: 0;
 	}
 	.viewall a {
