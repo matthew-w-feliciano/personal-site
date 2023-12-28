@@ -126,6 +126,24 @@ p {
   margin: 1em 2em 1em 2em;
 }
 
+/* Added media query to adjust brackets around title on phones */
+@media screen and (max-width: 500px) {
+  .intro h1:before {
+    content: "Data Scientist";
+    font-family: "refrigerator-deluxe",sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.12rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    background: url('img-sprite.png') no-repeat center 0.25em;
+    background-size: 25rem;
+    margin: 1em 2em 1em 2em;
+    padding: 0 5em 0 5em;
+  }
+}
+
 .intro h2 {
   font-family: "french-clarendon-ornamented",sans-serif;
   font-size: 2.25em;
@@ -151,7 +169,7 @@ p {
   margin:  0.5em auto 0.55em;
   padding: 0.5em 0 0.55em;
   font-family: "grecian-light-face",sans-serif;
-  font-size: 1.5em;
+  font-size: 2.5em;
   line-height: 1;
   background: 
     url('img-lg-horiz-border.png') repeat-x top right,
@@ -292,7 +310,7 @@ h3.archives, h3.resources {
   margin: 0 auto;
   display: block;
   z-index: -1;
-  position: relative;
+  position:relative;
 }
 
 .zen-resources:after {
@@ -328,6 +346,7 @@ h3.archives, h3.resources {
   display: block;
   text-align: center;
   line-height: 1.6;
+  padding: 0 0 15rem 0;
 }
 
 /* -------EXPLANATION------- */
@@ -339,7 +358,7 @@ h3.archives, h3.resources {
 }
 
 .participation h3 {
-  font-family: "refrigerator-deluxe",sans-serif;
+  font-family: "grecian-light-face",sans-serif;
   font-size: 2.5em;
   letter-spacing: 0.025em;
   padding-bottom: 1rem;
@@ -427,6 +446,21 @@ h3.archives, h3.resources {
   padding-bottom: 2em;
   background:  url('img-look-right-sm.png') no-repeat center 7.75rem;
   background-size: 8.5rem;
+}
+
+/* added id to make links red font */
+#links {
+  color: #e5452c;
+  text-decoration: underline;
+}
+
+/* added media query to adjust padding for bottom of page so that links are not covered/can be clicked */
+@media (max-width: 599px) {
+  .zen-resources {
+    background:  url('img-pointer-guy.png') no-repeat 43.8% bottom;
+    background-size: 13em;
+    padding-top: 7em;
+  }
 }
 
 @media (min-width:600px) {
@@ -658,13 +692,13 @@ h3.archives, h3.resources {
   }
   
   .participation h3:after {
-    content: '5.23 fl oz';
+    content: '5.22 fl oz';
     top: 1.1em;
     right: 1.6em;
   }
   
   .participation h3:before {
-    content: 'no. 218';
+    content: 'no. 222';
     top: 1.1em;
     left: 1.6em;
   }
@@ -744,7 +778,7 @@ h3.archives, h3.resources {
   }
   
   .participation h3 {
-    font-size: 5.25em;
+    font-size: 3.75em;
     background-size: 9em;
   }
   
@@ -830,7 +864,7 @@ h3.archives, h3.resources {
   }
   
   .preamble h3:first-child {
-    font-size: 3em;
+    font-size: 3.75em;
   }
   
   .benefits:before, .benefits:after {
