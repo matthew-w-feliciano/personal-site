@@ -89,8 +89,8 @@ a {
     display: inline-block;
     padding: 0 4px;
     border-radius: 2px;
-    background-color: #fff;
-    color: #000;
+    /* background-color: #fff; */
+    color: #fff;
     text-decoration: none;
     line-height: 21px;
     -moz-transition: all 0.5s ease-out;
@@ -141,10 +141,12 @@ footer a {
 .design-selection li a.design-name,
 .design-archives a,
 .zen-resources a {
-    padding: 0;
+    padding: 0 0 1rem 0;
     border-radius: 0;
     background-color: transparent;
     color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .design-selection li a.designer-name {
