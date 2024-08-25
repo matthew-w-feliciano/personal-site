@@ -568,6 +568,7 @@ footer a::after {
     line-height: 23px;
 }
 
+/* I believe this sectio nis what is causing the porblem with the text not scrolling properly, not the keyframes or the section in 219-base */
 .design-selection li a.designer-name {
     position: absolute;
     top: 23px;
@@ -590,17 +591,17 @@ footer a::after {
     font-weight: 900;
     font-size: 25px;
     line-height: 25px;
-    -moz-animation: marquee 30s infinite linear;
-    -o-animation: marquee 30s infinite linear;
-    -webkit-animation: marquee 30s infinite linear;
-    animation: marquee 30s infinite linear;
+    -moz-animation: marquee 20s infinite linear;
+    -o-animation: marquee 20s infinite linear;
+    -webkit-animation: marquee 20s infinite linear;
+    animation: marquee 20s infinite linear;
 }
         
 .design-selection li:nth-child(2) a.designer-name {
-    -moz-animation-duration: 30s;
-    -o-animation-duration: 30s;
-    -webkit-animation-duration: 30s;
-    animation-duration: 30s;
+    -moz-animation-duration: 20s;
+    -o-animation-duration: 20s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
     -moz-animation-delay: 5s;
     -o-animation-delay: 5s;
     -webkit-animation-delay: 5s;
@@ -608,10 +609,10 @@ footer a::after {
 }
 
 .design-selection li:nth-child(3) a.designer-name {
-    -moz-animation-duration: 30s;
-    -o-animation-duration: 30s;
-    -webkit-animation-duration: 30s;
-    animation-duration: 30s;
+    -moz-animation-duration: 20s;
+    -o-animation-duration: 20s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
     -moz-animation-delay: 10s;
     -o-animation-delay: 10s;
     -webkit-animation-delay: 10s;
